@@ -1,0 +1,7 @@
+langchain_openai
+langchain_core
+dotenv
+langchain-community
+tavily-python
+fpdf
+getpass
