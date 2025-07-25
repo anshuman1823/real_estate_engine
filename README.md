@@ -147,3 +147,48 @@ The project was built with future growth in mind, tackling the optional "modular
 - **Formatting the Output:** The tool is careful about how it handles data. It uses special data classes (`Pydantic`) to make sure information is structured correctly between agents. Then, a final `ReportGenerator` agent makes the information look good for the final report.
 - **Scoring Strategies:** The scoring system is its own separate logic. It uses a weighted formula to score each strategy, and this logic could easily be tweaked in the future if priorities change.
 - **Tracking Versions:** To make sure results can be reproduced and debugged, the tool is set up to be run with version control (like Git). It also saves a `final_result.pkl` file, which acts as a "black box" recorder for everything that happened during a specific run.
+
+---
+
+
+# Bonus Ideas
+
+This document outlines proposed enhancements to the Real Estate Simulation Engine, grouped into two categories: **Core Platform Enhancements** to improve accuracy and value, and **Innovative Features** to expand its functionality.
+
+---
+
+### **Part 1: Core Platform Enhancements**
+
+**1. Internal Knowledge RAG**
+
+**Overview:** Build a vector database of past deals—scenarios, strategies, agent notes, and outcomes.
+
+**Benefit:** Enables Retrieval-Augmented Generation (RAG) based on proprietary data, making recommendations more relevant and grounded in the firm’s experience.
+
+**2. Real-Time Property Valuation**
+
+**Overview:** Integrate with live data providers (e.g., Rightmove, Zoopla) via API.
+
+**Benefit:** Provides accurate pricing and comps in real time, enhancing pricing precision and negotiation power.
+
+**3. Curated Web Search**
+
+**Overview:** Limit searches to high-authority sources (e.g., Knight Frank, ONS, FT).
+
+**Benefit:** Improves reliability and quality of insights by reducing noise from less credible content.
+
+---
+
+### **Part 2: Innovative Features**
+
+**4. Buyer Agent Persona & Red Teaming**
+
+**Overview:** Simulate buyer responses (e.g., objections, counteroffers) using an LLM.
+
+**Benefit:** Helps agents anticipate reactions and refine strategies before going to market.
+
+**5. Generative Marketing Content**
+
+**Overview:** Auto-generate listings, social posts, and email templates based on strategy.
+
+**Benefit:** Saves time and ensures consistent messaging across platforms.
